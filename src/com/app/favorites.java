@@ -1,6 +1,7 @@
-package gov.jchao;
+package com.app;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,14 +11,15 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class favorites
  */
-@WebServlet(description = "my favorite bookmarks", urlPatterns = { "/favorites" })
+@WebServlet("/favorites")
 public class favorites extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+       
     /**
-     * Default constructor. 
+     * @see HttpServlet#HttpServlet()
      */
     public favorites() {
+        super();
         // TODO Auto-generated constructor stub
     }
 
